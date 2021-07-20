@@ -27,7 +27,7 @@ const Home = () => {
       }
       <div className={styles.movieBox}>
         {
-          !loading && data.movies && data.movies.map(movie => <Movie key={movie.id} id={movie.id}  />)
+          !loading && data.movies && data.movies.map(movie => <Movie key={movie.id} id={movie.id} isLiked="" bgImg={movie.medium_cover_image} />)
         }
       </div>
     </div>
